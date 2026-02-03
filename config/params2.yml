@@ -1,0 +1,43 @@
+data:
+  raw_path: data/raw/data1.csv
+  processed_path: data/processed/
+  train_file: train.csv
+  test_file: test.csv
+
+folders:
+  models: models/
+  report: report/
+
+train:
+  test_size: 0.2
+  random_state: 42
+  optuna_trials: 30
+
+features:
+  categorical: 
+    - zip_code
+    - channel
+    - is_referral
+  numeric_interactions:
+    - history_discount
+    - history_bogo
+    - recency_history
+  recency_bins: 3
+  recency_bin_strategy: quantile
+
+model:
+  n_estimators_range:
+    - 100
+    - 500
+  max_depth_range:
+    - 5
+    - 20
+  learning_rate_range:
+    - 0.01
+    - 0.2
+  num_leaves_range:
+    - 20
+    - 200
+  min_child_samples_range:
+    - 5
+    - 100

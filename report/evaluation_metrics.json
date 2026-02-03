@@ -1,0 +1,26 @@
+{
+  "auuc_from_training": null,
+  "auuc_on_test": 811.2524,
+  "mean_uplift_score": 0.0,
+  "top_fraction": 0.05,
+  "top_mean_uplift_score": 0.0,
+  "top_conversion": 0.1453,
+  "overall_conversion": 0.1467,
+  "roi_summary": {
+    "baseline_conversions": 1878,
+    "baseline_net_profit": 3692000,
+    "uplift_conversions": 93,
+    "uplift_net_profit": 182800,
+    "budget_savings_fraction": 0.95,
+    "profit_increase_ratio": 0.049512459371614304
+  },
+  "best_params_summary": {
+    "n_estimators": 212,
+    "max_depth": 13,
+    "learning_rate": 0.013647911130882054,
+    "num_leaves": 21,
+    "min_child_samples": 33,
+    "random_state": 42,
+    "n_jobs": -1
+  }
+}
